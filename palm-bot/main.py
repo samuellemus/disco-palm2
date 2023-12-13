@@ -38,10 +38,10 @@ async def on_message(message: DiscordMessage):
     try : 
         if message.author == client.user: 
             return 
-        if message.content.startswith('hey palm, '): 
+        if message.content.startswith('!palm'): 
             # TODO: Implement command tree
             # 
-            message.content = message.content[10:]
+            message.content = message.content[6:]
             response = palm_bot.query_palm(message.content)
             await message.channel.send(response)
 

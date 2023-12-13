@@ -59,6 +59,9 @@ class palm_bot:
 
     def query_palm(message:str) -> str:
         print(message)
+        if message == "":
+            return "I'm sorry, I didn't catch that. Could you repeat yourself?"
+        
         models = [m for m in palm.list_models() if 'generateText' in m.supported_generation_methods]
         model = models[0].name
         completion = palm.generate_text(
@@ -68,5 +71,6 @@ class palm_bot:
             # The maximum length of the response
             max_output_tokens=800,
         )
+        print(completion.result)
         return completion.result
 

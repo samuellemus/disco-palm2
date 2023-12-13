@@ -4,6 +4,10 @@
 #  Contains the discord client, which is used to listen for messages
 #  from users, and respond to them with a message from the palm api.
 #  This is a very basic implementation and I intend to improve it over time. 
+# Usage: 
+#  Run this file with a recent-ish python
+#  version (I'm using 3.11.6)
+#  usr can type '!palm <prompt>' in a discord channel
 # Author:
 #  Samuel Lemus
 # --- 

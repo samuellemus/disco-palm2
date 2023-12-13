@@ -4,7 +4,7 @@
 #  Contains the palm_bot class, which is used to query the palm api
 #  for a response to a given prompt.
 #  The prompt in question being: a discord message triggered by a
-#  user command ('hey palm, ')
+#  user command ('!palm <prompt>')
 # 
 # Contains tutorial code from: https://developers.generativeai.google/tutorials/text_quickstart
 #
